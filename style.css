@@ -78,3 +78,20 @@ body{
 .header3 {
     color: #eeeeee;
 }
+
+/* ipad */
+
+@media screen and (min-width: 50rem){ 
+    .grid-container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 20% 20% 50%;
+        grid-template-areas: 
+            "menu menu"
+            "header header"
+            "header2 header2"
+            "header3 header3"
+        ;
+    }
+}
